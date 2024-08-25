@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .btn {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            border: none;
+            border-radius: 15px;
+            background-color: #3498db;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn" onclick="openBook('g.pdf')">Grade 1</button>
+        <button class="btn" onclick="openBook('w.pdf')">Grade 2</button>
+    </div>
+
+    <script>
+        function openBook(fileName) {
+            window.open(fileName, '_blank');
+        }
+    </script>
+</body>
+</html>
